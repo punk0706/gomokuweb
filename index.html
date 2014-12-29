@@ -24,7 +24,9 @@
   </script>
   <script type="text/javascript">
   	function fbLog(){
-  		$scope.fbLogin();
+  		if (angular.element(document.getElementById('loginCtrl'))){
+  			angular.element(document.getElementById('yourControllerElementID')).scope().fbLogin();
+  		}
   	}
   </script>
 </head>
