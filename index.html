@@ -24,10 +24,10 @@
   </script>
   <script type="text/javascript">
   	function fbLog(){
-  		if (angular.element(document.getElementById('loginCtrl'))){
-  			var controller = angular.element(document.getElementById('loginCtrl'));
-  			controller.scope().fbLogin();
-  		}
+  		 var scope = angular.element(document.getElementById("loginif")).scope();
+    	scope.$apply(function () {
+        	scope.fbLogin();
+    	});
   	}
   </script>
 </head>
