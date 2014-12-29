@@ -25,7 +25,8 @@
   <script type="text/javascript">
   	function fbLog(){
   		if (angular.element(document.getElementById('loginCtrl'))){
-  			angular.element(document.getElementById('yourControllerElementID')).scope().fbLogin();
+  			var controller = angular.element(document.getElementById('loginCtrl'));
+  			controller.scope().fbLogin();
   		}
   	}
   </script>
