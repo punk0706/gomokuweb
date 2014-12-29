@@ -10,10 +10,12 @@
         <span style="font-size:100%"><strong>{{playerInfo.displayName}}</strong></span>
     </div>
     <br />
-    	<div style="text-align:center;" ><fb:login-button scope="public_profile,email" onlogin="fbLog();"></fb:login-button></div>
-	<br />
-		<div><button class="btn btn-primary centerItem" ng-click="guestLogin();" style="width:50%;height:15%;font-size:80%;">Play as Guest</button></div>
-    <br />
+    	<div style="text-align:center;" ><fb:login-button scope="public_profile,email" size="large" onlogin="fbLog();"></fb:login-button>
+    	</div>
+		<div class="centerItem" style="position:relative;text-align:center;font-size:100%;color:LightSteelBlue;">
+        	--------------- or ---------------
+    	</div>
+		<div><button class="btn btn-primary centerItem" ng-click="guestLogin();" style="width:30%;font-size:80%;">Play as Guest</button></div>
     <br />
     	<div class="centerItem" style="width:70%">
     		<tabset justified="true" style="width:100%;font-size:80%">
