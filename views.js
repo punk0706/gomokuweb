@@ -113,7 +113,6 @@ myApp.controller('loginCtrl', function($routeParams, $location, $interval, $scop
   $scope.fbLogin = function(){
     FB.getLoginStatus(fbCallback);
   }
-   FB.getLoginStatus(fbCallback);
   function fbCallback(response){
   	console.log(response);
   	if (response && response.authResponse.accessToken){
