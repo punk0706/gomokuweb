@@ -117,18 +117,18 @@ myApp.controller('loginCtrl', function($routeParams, $location, $interval, $scop
   function fbCallback(response){
   	console.log(response);
   	if (response && response.authResponse.accessToken){
-  	$scope.fbAccessToken = response.authResponse.accessToken;
-    var obj = [ // SOCIAL_LOGIN - MERGE ACCOUNTS
+  		$scope.fbAccessToken = response.authResponse.accessToken;
+    	var obj = [ // SOCIAL_LOGIN - MERGE ACCOUNTS
                     {
-                      socialLogin: {
+                      	socialLogin: {
                         accessToken: $scope.fbAccessToken,
                         uniqueType: "F"
                       }
                     }
-    ];
-    sendServerMessage('FB_LOGIN', obj);
+    	];
+    	sendServerMessage('FB_LOGIN', obj);
     }
-  }
+  };
   
   function guestLogin() {
     var avatarLs = ["bat", "devil", "mike", "scream", "squash"];
