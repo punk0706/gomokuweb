@@ -104,17 +104,6 @@ angular.module('myApp')
       		dismissBt.style.top = "105%";
       	}
       }
-      gameContent.style['transform'] = transformString;
-      gameContent.style['-o-transform'] = transformString;
-      gameContent.style['-webkit-transform'] = transformString;
-      gameContent.style['-moz-transform'] = transformString;
-      gameContent.style['-ms-transform'] = transformString;
-      var transformOriginString = "top left";
-      gameContent.style['transform-origin'] = transformOriginString;
-      gameContent.style['-o-transform-origin'] = transformOriginString;
-      gameContent.style['-webkit-transform-origin'] = transformOriginString;
-      gameContent.style['-moz-transform-origin'] = transformOriginString;
-      gameContent.style['-ms-transform-origin'] = transformOriginString;
     }
 	function startScaleService(){
 		autoService = setInterval(rescale, 1000);
