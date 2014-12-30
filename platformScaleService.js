@@ -24,11 +24,12 @@ angular.module('myApp')
       if (gameSize === null) {
         return;
       }
+      var myFrame = document.getElementById("game_iframe");
       var myGameWidth = gameSize.width;
       var myGameHeight = gameSize.height;
       var windowWidth = $window.innerWidth;
       var windowHeight = $window.innerHeight;
-      if(windowHeight < 528){
+      if(windowHeight < 528 && !myFrame){
       	windowHeight = 528;
       	/*
       	if (windowWidth > windowHeight){
@@ -70,7 +71,6 @@ angular.module('myApp')
       gameContent.style['left'] = tx + "px";
       gameContent.style['top'] = ty + "px";
       var myPanel = document.getElementById("myPanel");
-      var myFrame = document.getElementById("game_iframe");
       var oppPanel = document.getElementById("oppPanel");
       var matchListBt = document.getElementById("matchListBt");
       var dismissBt = document.getElementById("dismissBt");
