@@ -70,7 +70,7 @@ angular.module('myApp')
       gameContent.style['left'] = tx + "px";
       gameContent.style['top'] = ty + "px";
       var myPanel = document.getElementById("myPanel");
-      var myFrame = document.getElementById("game_iframe");
+      //var myFrame = document.getElementById("game_iframe");
       var oppPanel = document.getElementById("oppPanel");
       var matchListBt = document.getElementById("matchListBt");
       var dismissBt = document.getElementById("dismissBt");
@@ -103,17 +103,6 @@ angular.module('myApp')
       		dismissBt.style.left = "70%";
       		dismissBt.style.top = "105%";
       	}
-      }
-      if (myFrame){
-      	if ($window.innerWidth > $window.innerHeight){
-      		myFrame.style.width = $window.innerHeight;
-      		myFrame.style.height = $window.innerHeight;
-      	}
-      	else{
-      		myFrame.style.width = $window.innerWidth;
-      		myFrame.style.height = $window.innerWidth;
-      	}
-      	
       }
       /*
       gameContent.style['transform'] = transformString;
