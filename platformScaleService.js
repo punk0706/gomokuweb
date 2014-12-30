@@ -65,10 +65,10 @@ angular.module('myApp')
       var ty = ((windowHeight / scale - myGameHeight) / 2) * scale;
       var transformString = "scale(" + scale + "," + scale + ")  translate(" + tx + "px, " + ty + "px)";
       var gameContent = document.getElementById("gameContent");
-      gameContent.style['height'] = (gameSize.height*scale).toString() + "px";
-      gameContent.style['width'] = (gameSize.width*scale).toString() + "px";
-      gameContent.style['left'] = tx + "px";
-      gameContent.style['top'] = ty + "px";
+      //gameContent.style['height'] = (gameSize.height*scale).toString() + "px";
+      //gameContent.style['width'] = (gameSize.width*scale).toString() + "px";
+      //gameContent.style['left'] = tx + "px";
+      //gameContent.style['top'] = ty + "px";
       var myPanel = document.getElementById("myPanel");
       //var myFrame = document.getElementById("game_iframe");
       var oppPanel = document.getElementById("oppPanel");
@@ -104,7 +104,6 @@ angular.module('myApp')
       		dismissBt.style.top = "105%";
       	}
       }
-      /*
       gameContent.style['transform'] = transformString;
       gameContent.style['-o-transform'] = transformString;
       gameContent.style['-webkit-transform'] = transformString;
@@ -116,7 +115,6 @@ angular.module('myApp')
       gameContent.style['-webkit-transform-origin'] = transformOriginString;
       gameContent.style['-moz-transform-origin'] = transformOriginString;
       gameContent.style['-ms-transform-origin'] = transformOriginString;
-      */
     }
 	function startScaleService(){
 		autoService = setInterval(rescale, 1000);
