@@ -65,10 +65,10 @@ angular.module('myApp')
       var ty = ((windowHeight / scale - myGameHeight) / 2) * scale;
       var transformString = "scale(" + scale + "," + scale + ")  translate(" + tx + "px, " + ty + "px)";
       var gameContent = document.getElementById("gameContent");
-      //gameContent.style['height'] = (gameSize.height*scale).toString() + "px";
-      //gameContent.style['width'] = (gameSize.width*scale).toString() + "px";
-      //gameContent.style['left'] = tx + "px";
-      //gameContent.style['top'] = ty + "px";
+      gameContent.style['height'] = (gameSize.height*scale).toString() + "px";
+      gameContent.style['width'] = (gameSize.width*scale).toString() + "px";
+      gameContent.style['left'] = tx + "px";
+      gameContent.style['top'] = ty + "px";
       var myPanel = document.getElementById("myPanel");
       //var myFrame = document.getElementById("game_iframe");
       var oppPanel = document.getElementById("oppPanel");
