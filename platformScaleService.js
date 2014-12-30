@@ -106,12 +106,12 @@ angular.module('myApp')
       }
       if (myFrame){
       	if ($window.innerWidth > $window.innerHeight){
-      		myFrame.stype.width = $window.innerHeight;
-      		myFrame.stype.height = $window.innerHeight;
+      		myFrame.style.width = $window.innerHeight;
+      		myFrame.style.height = $window.innerHeight;
       	}
       	else{
-      		myFrame.stype.width = $window.innerWidth;
-      		myFrame.stype.height = $window.innerWidth;
+      		myFrame.style.width = $window.innerWidth;
+      		myFrame.style.height = $window.innerWidth;
       	}
       	
       }
