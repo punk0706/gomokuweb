@@ -70,6 +70,7 @@ angular.module('myApp')
       gameContent.style['left'] = tx + "px";
       gameContent.style['top'] = ty + "px";
       var myPanel = document.getElementById("myPanel");
+      var myFrame = document.getElementById("myFrame");
       var oppPanel = document.getElementById("oppPanel");
       var matchListBt = document.getElementById("matchListBt");
       var dismissBt = document.getElementById("dismissBt");
@@ -87,6 +88,8 @@ angular.module('myApp')
       		matchListBt.style.top = "90%";
       		dismissBt.style.left = "100%";
       		dismissBt.style.top = "90%";
+      		myFrame.stype.width = $window.innerHeight;
+      		myFrame.stype.height = $window.innerHeight;
       	}
       	else{
       		myPanel.style.top = "-25%";
@@ -101,6 +104,8 @@ angular.module('myApp')
       		matchListBt.style.top = "105%";
       		dismissBt.style.left = "70%";
       		dismissBt.style.top = "105%";
+      		myFrame.stype.width = $window.innerWidth;
+      		myFrame.stype.height = $window.innerWidth;
       	}
       }
       /*
