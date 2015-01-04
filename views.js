@@ -477,7 +477,7 @@ myApp.controller('gameCtrl',
       	if($scope.playMode === 'passAndPlay'){
       		return "White's turn.";
       	}
-      	else if($scope.playMode === 'playAgains'){
+      	else if($scope.playMode === 'playAgainstTheComputer'){
       		return "Computer's turn.";
       	}
       	else{
