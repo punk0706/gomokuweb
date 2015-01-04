@@ -465,22 +465,24 @@ myApp.controller('gameCtrl',
         return "Match ended with scores: " + matchState.endMatchScores;
       }
       
-      if (matchState.turnIndex === myTurnIndex)
+      if (matchState.turnIndex === myTurnIndex) {
       	if($scope.playMode === 'passAndPlay'){
       		return "Black's turn.";
       	}
       	else{
         	return "Your turn.";
         }
-      else
+        }
+      else{
       	if($scope.playMode === 'passAndPlay'){
       		return "White's turn.";
       	}
       	else if($scope.playMode === 'playAgains'){
       		return "Computer's turn.";
       	}
-      	else
+      	else{
         	return "Opponent's turn.";
+        }
         }
     };
 
